@@ -14,10 +14,10 @@
 # 9
 import random
 n = int(input('Количество кустов: '))
-lst = [ random.randint(1,9) for item in range (n+1)]
+lst = [ random.randint(1,9) for item in range (n)]
 print (lst)
 result = max = 0
 for i in range(n):
-    result = lst[i-1]+lst[i]+lst[i+1]
+    result = lst[i-2]+lst[i-1]+lst[i]
     if result > max : max = result
 print (max)
