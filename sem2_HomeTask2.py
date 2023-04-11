@@ -6,17 +6,24 @@
 
 # Решение циклами
 
-sum = int(input("Введите сумму двух натуральных чисел: "))
-mult = int(input("Введите произведение двух натуральных чисел: "))
+s = int(input("Введите сумму двух натуральных чисел: "))
+p = int(input("Введите произведение двух натуральных чисел: "))
 
-for item in range(1, sum//2+1):
-    if item*(sum-item) == mult:
-        print(item, sum-item)
+for item in range(1, s//2+1):
+    if item*(s-item) == p:
+        print(item, s-item)
         break
 else:
     print('Нет решений')
 
 
+# Решение циклами2
+s = int(input("Введите сумму двух натуральных чисел: "))
+p = int(input("Введите произведение двух натуральных чисел: "))
+i=1
+while i*(s-i) != p:
+    i +=1
+print(i, s-i)
 
 # Решение формулой
 from math import sqrt
